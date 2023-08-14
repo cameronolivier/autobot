@@ -1,7 +1,5 @@
-import One from '../../layouts/Home';
+import One from "../../layouts/Home"
 
 export default function TabZeroScreen() {
-  return (
-    <One />
-  );
+  return <One />
 }

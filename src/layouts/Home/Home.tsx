@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native"
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+import EditScreenInfo from "../../components/EditScreenInfo"
+import { Text, View } from "../../components/Themed"
 
 export default function HomeScreen() {
   return (
@@ -21,54 +21,58 @@ export default function HomeScreen() {
       </View>
       <View style={styles.card}>
         <Text style={styles.title}>Tyre Balancing:</Text>
-      <Text style={styles.content}>Last balancing: 12 March 2023</Text>
-      <Text style={styles.content}>Balance Interval: 8000km - 10000km</Text>
-      <Text style={styles.content}>Next balancing in: 2 months</Text>
-      <Text style={styles.link}>Edit</Text>
+        <Text style={styles.content}>Last balancing: 12 March 2023</Text>
+        <Text style={styles.content}>Balance Interval: 8000km - 10000km</Text>
+        <Text style={styles.content}>Next balancing in: 2 months</Text>
+        <Text style={styles.link}>Edit</Text>
+      </View>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
     </View>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-    </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     paddingHorizontal: 10,
   },
   header: {
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
     borderRadius: 4,
     marginTop: 10,
     padding: 10,
-    backgroundColor:'#eee',
+    backgroundColor: "#eee",
   },
   card: {
-    borderColor: '#ccc',
-    borderStyle: 'solid',
+    borderColor: "#ccc",
+    borderStyle: "solid",
     borderWidth: 1,
     borderRadius: 4,
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
     marginTop: 10,
     padding: 10,
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   content: {
     fontSize: 18,
   },
   link: {
     fontSize: 20,
-    color: '#f00',
+    color: "#f00",
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    width: "80%",
   },
-});
+})
